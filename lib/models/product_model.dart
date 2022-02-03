@@ -26,7 +26,7 @@ class Product extends Equatable {
       name: 'Soft Drink #1',
       category: 'Soft Drink',
       imageUrl:
-          'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+          'https://images.unsplash.com/photo-1592860893757-84536a1c9b82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
       price: 10000,
       isRecommended: true,
       isPopular: true,
@@ -35,7 +35,7 @@ class Product extends Equatable {
       name: 'Smoothies #1',
       category: 'Smoothies',
       imageUrl:
-          'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
+          'https://images.unsplash.com/photo-1632422258929-c31add6af207?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNtb290aGllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
       price: 12000,
       isRecommended: true,
       isPopular: false,
@@ -44,7 +44,7 @@ class Product extends Equatable {
       name: 'Water #1',
       category: 'Water',
       imageUrl:
-          'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
+          'https://images.unsplash.com/photo-1616118132534-381148898bb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWluZXJhbCUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
       price: 5000,
       isRecommended: false,
       isPopular: false,
@@ -53,7 +53,7 @@ class Product extends Equatable {
       name: 'Soft Drink #2',
       category: 'Soft Drink',
       imageUrl:
-          'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+          'https://images.unsplash.com/photo-1629203849820-fdd70d49c38e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVwc2l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
       price: 10000,
       isRecommended: true,
       isPopular: true,
@@ -62,7 +62,7 @@ class Product extends Equatable {
       name: 'Smoothies #2',
       category: 'Smoothies',
       imageUrl:
-          'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
+          'https://media.istockphoto.com/photos/homemade-blueberry-or-currant-smoothie-with-cottage-cheese-and-fruits-picture-id1314147031?b=1&k=20&m=1314147031&s=170667a&w=0&h=XXvpLcPjKjYTdvz7yVlcXA23bRi0p5-neHN-vSxVINc=',
       price: 12000,
       isRecommended: true,
       isPopular: false,
@@ -71,7 +71,7 @@ class Product extends Equatable {
       name: 'Water #2',
       category: 'Water',
       imageUrl:
-          'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
+          'https://media.istockphoto.com/photos/mineral-water-picture-id1349148583?b=1&k=20&m=1349148583&s=170667a&w=0&h=U9ghlqPqYPDHL41KXOIiB4rNrNBRd8WyAc5H0zjMRdQ=',
       price: 5000,
       isRecommended: false,
       isPopular: false,

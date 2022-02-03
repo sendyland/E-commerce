@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uas_ecommerce_sendymaulana/blocs/bloc/cart_bloc.dart';
 import 'package:uas_ecommerce_sendymaulana/models/models.dart';
 
 class ProductCard extends StatelessWidget {
@@ -86,14 +88,31 @@ class ProductCard extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Expanded(
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.add_circle,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {},
-                      ),
+                    BlocBuilder<CartBloc, CartState>(
+                      builder: (context, state) {
+                        if (state is CartLoading) {
+                          return Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+                        if (state is CartLoaded) {
+                          return Expanded(
+                            child: IconButton(
+                              icon: Icon(
+                                Icons.add_circle,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                context
+                                    .read<CartBloc>()
+                                    .add(CartProductAdded(product));
+                              },
+                            ),
+                          );
+                        } else {
+                          return Text('Something went wrong');
+                        }
+                      },
                     ),
                     isWishlist
                         ? Expanded(

@@ -17,14 +17,14 @@ class Category extends Equatable {
     Category(
         name: 'Soft Drink',
         imageUrl:
-            'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80'),
+            'https://images.unsplash.com/photo-1592860893757-84536a1c9b82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'),
     Category(
         name: 'Smoothies',
         imageUrl:
-            'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80'),
+            'https://media.istockphoto.com/photos/two-glasses-of-blueberry-smoothie-picture-id1299939924?b=1&k=20&m=1299939924&s=170667a&w=0&h=61uT2tB1PbuOWRrOWOdcG6OOZ05ZAnZMoIjwkU6X5Pk='),
     Category(
         name: 'Water',
         imageUrl:
-            'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80'),
+            'https://images.unsplash.com/photo-1612134678926-7592c521aa52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1pbmVyYWwlMjB3YXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
   ];
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uas_ecommerce_sendymaulana/blocs/bloc/cart_bloc.dart';
 import 'package:uas_ecommerce_sendymaulana/blocs/wishlist/wishlist_bloc.dart';
 import 'package:uas_ecommerce_sendymaulana/config/app_router.dart';
 import 'package:uas_ecommerce_sendymaulana/config/theme.dart';
@@ -15,14 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => WishlistBloc()..add(StartWishList()))
+        BlocProvider(create: (_) => WishlistBloc()..add(StartWishList())),
+        BlocProvider(create: (_) => CartBloc()..add(CartStarted())),
       ],
       child: MaterialApp(
         title: 'E-Commerce',
         theme: theme(),
         onGenerateRoute: AppRouter.onGenerateRoute,
-        initialRoute: HomeScreen.routeName,
-        home: const HomeScreen(),
+        initialRoute: SplashScreen.routeName,
       ),
     );
   }
