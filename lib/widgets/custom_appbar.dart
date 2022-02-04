@@ -8,29 +8,31 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      title: Container(
-        color: Colors.black,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 20,
+    return Center(
+      child: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Container(
+          color: Colors.black,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 20,
+          ),
+          child: Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .headline2!
+                  .copyWith(color: Colors.white)),
         ),
-        child: Text(title,
-            style: Theme.of(context)
-                .textTheme
-                .headline2!
-                .copyWith(color: Colors.white)),
+        iconTheme: IconThemeData(color: Colors.black),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/wishlist');
+              },
+              icon: Icon(Icons.favorite))
+        ],
       ),
-      iconTheme: IconThemeData(color: Colors.black),
-      actions: [
-        IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/wishlist');
-            },
-            icon: Icon(Icons.favorite))
-      ],
     );
   }
 
