@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(title: 'E-Commerce'),
       bottomNavigationBar: CustomNavBar(),
-      body: Column(
+      body: ListView(
         children: [
           CarouselSlider(
             options: CarouselOptions(

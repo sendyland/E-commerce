@@ -75,14 +75,14 @@ class ProductCard extends StatelessWidget {
                             product.name,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5!
+                                .bodyText2!
                                 .copyWith(color: Colors.white),
                           ),
                           Text(
                             '\Rp${product.price}',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline6!
+                                .bodyText2!
                                 .copyWith(color: Colors.white),
                           ),
                         ],
@@ -106,6 +106,11 @@ class ProductCard extends StatelessWidget {
                                 context
                                     .read<CartBloc>()
                                     .add(CartProductAdded(product));
+
+                                final snackBar = SnackBar(
+                                    content: Text('Added to your Cart!'));
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(snackBar);
                               },
                             ),
                           );

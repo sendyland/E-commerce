@@ -12,17 +12,17 @@ TextTheme textTheme() {
   return TextTheme(
     headline1: TextStyle(
       color: Colors.black,
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: FontWeight.bold,
     ),
     headline2: TextStyle(
       color: Colors.black,
-      fontSize: 24,
+      fontSize: 18,
       fontWeight: FontWeight.bold,
     ),
     headline3: TextStyle(
       color: Colors.black,
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.bold,
     ),
     headline4: TextStyle(
@@ -32,7 +32,7 @@ TextTheme textTheme() {
     ),
     headline5: TextStyle(
       color: Colors.black,
-      fontSize: 14,
+      fontSize: 12,
       fontWeight: FontWeight.bold,
     ),
     headline6: TextStyle(
@@ -47,7 +47,7 @@ TextTheme textTheme() {
     ),
     bodyText2: TextStyle(
       color: Colors.black,
-      fontSize: 10,
+      fontSize: 9,
       fontWeight: FontWeight.bold,
     ),
   );

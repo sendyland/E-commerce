@@ -57,7 +57,7 @@ class ProductScreen extends StatelessWidget {
                       Navigator.pushNamed(context, '/cart');
                     },
                     child: Text('ADD TO CART',
-                        style: Theme.of(context).textTheme.headline3!),
+                        style: Theme.of(context).textTheme.headline5!),
                   );
                 },
               )
@@ -104,14 +104,14 @@ class ProductScreen extends StatelessWidget {
                           product.name,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5!
+                              .headline6!
                               .copyWith(color: Colors.white),
                         ),
                         Text(
                           '${product.price}',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5!
+                              .headline6!
                               .copyWith(color: Colors.white),
                         ),
                       ],
@@ -126,7 +126,7 @@ class ProductScreen extends StatelessWidget {
             child: ExpansionTile(
               initiallyExpanded: true,
               title: Text('Product Information',
-                  style: Theme.of(context).textTheme.headline3),
+                  style: Theme.of(context).textTheme.headline5),
               children: [
                 ListTile(
                   title: Text(
@@ -141,7 +141,7 @@ class ProductScreen extends StatelessWidget {
             child: ExpansionTile(
               initiallyExpanded: true,
               title: Text('Delivery Information',
-                  style: Theme.of(context).textTheme.headline3),
+                  style: Theme.of(context).textTheme.headline5),
               children: [
                 ListTile(
                   title: Text(

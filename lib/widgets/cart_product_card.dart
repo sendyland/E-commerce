@@ -5,8 +5,13 @@ import 'package:uas_ecommerce_sendymaulana/models/models.dart';
 
 class CartProductCard extends StatelessWidget {
   final Product product;
+  final int quantity;
 
-  const CartProductCard({Key? key, required this.product}) : super(key: key);
+  const CartProductCard({
+    Key? key,
+    required this.product,
+    required this.quantity,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +32,7 @@ class CartProductCard extends StatelessWidget {
               children: [
                 Text(
                   product.name,
-                  style: Theme.of(context).textTheme.headline5,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
                 Text(
                   '\Rp${product.price}',
@@ -49,8 +54,8 @@ class CartProductCard extends StatelessWidget {
                             .add(CartProductRemoved(product));
                       }),
                   Text(
-                    '1',
-                    style: Theme.of(context).textTheme.headline5,
+                    '$quantity',
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                   IconButton(
                       icon: Icon(Icons.add_circle),

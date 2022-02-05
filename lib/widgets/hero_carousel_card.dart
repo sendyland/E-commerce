@@ -31,7 +31,7 @@ class HeroCarouselCard extends StatelessWidget {
               Image.network(
                 product == null ? category!.imageUrl : product!.imageUrl,
                 fit: BoxFit.cover,
-                width: 1000.0,
+                width: 500.0,
               ),
               Positioned(
                 bottom: 0.0,
@@ -52,7 +52,7 @@ class HeroCarouselCard extends StatelessWidget {
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                   child: Text(
                     product == null ? category!.name : product!.name,
-                    style: Theme.of(context).textTheme.headline2!.copyWith(
+                    style: Theme.of(context).textTheme.headline4!.copyWith(
                           color: Colors.white,
                         ),
                   ),

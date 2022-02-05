@@ -24,7 +24,7 @@ class CartScreen extends StatelessWidget {
         bottomNavigationBar: BottomAppBar(
           color: Colors.black,
           child: Container(
-            height: 70,
+            height: 30,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -32,7 +32,7 @@ class CartScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(primary: Colors.white),
                   onPressed: () {},
                   child: Text('GO TO CHECKOUT',
-                      style: Theme.of(context).textTheme.headline3!),
+                      style: Theme.of(context).textTheme.headline5!),
                 )
               ],
             ),
@@ -57,10 +57,8 @@ class CartScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              state.cart.freeDeliveryString,
-                              style: Theme.of(context).textTheme.headline5,
-                            ),
+                            Text(state.cart.freeDeliveryString,
+                                style: Theme.of(context).textTheme.bodyText2),
                             ElevatedButton(
                               onPressed: () {
                                 Navigator.pushNamed(context, '/');
@@ -74,7 +72,7 @@ class CartScreen extends StatelessWidget {
                                 'Add More Items',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline5!
+                                    .bodyText1!
                                     .copyWith(
                                       color: Colors.white,
                                     ),
@@ -86,10 +84,21 @@ class CartScreen extends StatelessWidget {
                         SizedBox(
                           height: 400,
                           child: ListView.builder(
-                            itemCount: state.cart.products.length,
+                            itemCount: state.cart
+                                .productQuantity(state.cart.products)
+                                .keys
+                                .length,
                             itemBuilder: (context, index) {
                               return CartProductCard(
-                                  product: state.cart.products[index]);
+                                product: state.cart
+                                    .productQuantity(state.cart.products)
+                                    .keys
+                                    .elementAt(index),
+                                quantity: state.cart
+                                    .productQuantity(state.cart.products)
+                                    .values
+                                    .elementAt(index),
+                              );
                             },
                           ),
                         ),
@@ -110,16 +119,16 @@ class CartScreen extends StatelessWidget {
                                   Text(
                                     'SUBTOTAL',
                                     style:
-                                        Theme.of(context).textTheme.headline5,
+                                        Theme.of(context).textTheme.headline6,
                                   ),
                                   Text(
-                                    '\Rp${state.cart.subTotalString}',
+                                    '\Rp ${state.cart.subTotalString}',
                                     style:
-                                        Theme.of(context).textTheme.headline5,
+                                        Theme.of(context).textTheme.headline6,
                                   )
                                 ],
                               ),
-                              SizedBox(height: 10),
+                              SizedBox(height: 5),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -127,12 +136,12 @@ class CartScreen extends StatelessWidget {
                                   Text(
                                     'DELIVERY FEE',
                                     style:
-                                        Theme.of(context).textTheme.headline5,
+                                        Theme.of(context).textTheme.headline6,
                                   ),
                                   Text(
                                     '\Rp ${state.cart.deliveryFeeString}',
                                     style:
-                                        Theme.of(context).textTheme.headline5,
+                                        Theme.of(context).textTheme.headline6,
                                   )
                                 ],
                               ),
@@ -143,7 +152,7 @@ class CartScreen extends StatelessWidget {
                           children: [
                             Container(
                               width: MediaQuery.of(context).size.width,
-                              height: 60,
+                              height: 40,
                               decoration: BoxDecoration(
                                 color: Colors.black.withAlpha(50),
                               ),
@@ -151,7 +160,7 @@ class CartScreen extends StatelessWidget {
                             Container(
                               width: MediaQuery.of(context).size.width,
                               margin: const EdgeInsets.all(5.0),
-                              height: 60,
+                              height: 30,
                               decoration: BoxDecoration(
                                 color: Colors.black,
                               ),
@@ -166,14 +175,14 @@ class CartScreen extends StatelessWidget {
                                       'TOTAL',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5!
+                                          .bodyText1!
                                           .copyWith(color: Colors.white),
                                     ),
                                     Text(
                                       '\Rp ${state.cart.totalString}',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5!
+                                          .bodyText1!
                                           .copyWith(color: Colors.white),
                                     )
                                   ],

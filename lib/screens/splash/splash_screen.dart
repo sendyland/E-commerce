@@ -34,7 +34,7 @@ class SplashScreen extends StatelessWidget {
             ),
             child: Text(
               'SM - Commerce',
-              style: Theme.of(context).textTheme.headline2!.copyWith(
+              style: Theme.of(context).textTheme.headline4!.copyWith(
                     color: Colors.white,
                   ),
             ),

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "476620106558",
+    "firebase_url": "https://uas-mobile2-76eb7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "uas-mobile2-76eb7",
+    "storage_bucket": "uas-mobile2-76eb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476620106558:android:a6aed8bedf55ef77f9da6f",
+        "android_client_info": {
+          "package_name": "com.example.uas_ecommerce_sendymaulana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476620106558-btmnc304tpbhfgsejbngk40c1lgtvba0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALul7wHU9qAVrcCHwtYDYqCSZCF6XEjws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476620106558-btmnc304tpbhfgsejbngk40c1lgtvba0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
