@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ecommerce_sendymaulana/models/models.dart';
 import 'package:uas_ecommerce_sendymaulana/screens/screens.dart';
+import 'package:uas_ecommerce_sendymaulana/screens/sign-in/signin_screen.dart';
 import '../screens/screens.dart';
 
 class AppRouter {
@@ -14,6 +15,8 @@ class AppRouter {
         return HomeScreen.route();
       case SplashScreen.routeName:
         return SplashScreen.route();
+      case SigninScreen.routeName:
+        return SigninScreen.route();
       case CartScreen.routeName:
         return CartScreen.route();
       case ProductScreen.routeName:
@@ -24,6 +27,8 @@ class AppRouter {
         return WishlistScreen.route();
       case AboutScreen.routeName:
         return AboutScreen.route();
+      case CheckoutScreen.routeName:
+        return CheckoutScreen.route();
       default:
         return _errorRoute();
     }
